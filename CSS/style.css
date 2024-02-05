@@ -1,0 +1,262 @@
+/*quitando valores por defecto*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*imports del proyecto*/
+/* Config de la grilla de Flota*/
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-top: 2em;
+}
+
+.grid-item {
+  /* @include flex-colum-standar();*/
+  padding: 10px;
+}
+
+/*mixin del proyecto */
+/*responsive*/
+/* Config de la grilla de Flota*/
+main .titulo {
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  margin: 1em;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-top: 2em;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+color: antiquewhite;
+}
+
+/*fin responsive*/
+/*styles*/
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(9, 9, 10) 46%, rgb(75, 75, 88) 76%);
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+  body main body {
+    background: rgb(25, 27, 39);
+    background: linear-gradient(45deg, rgb(25, 27, 39) 0%, rgb(75, 75, 88) 76%);
+  }
+body main .titulo {
+    display: block;
+    position: absolute;
+    top: 10em;
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    color: antiquewhite;
+    margin: 1em;
+  }
+  body main p {
+    font-family: "Oswald", sans-serif;
+    color: antiquewhite;
+    margin: 1em;
+  }
+  body main .grid-container {
+margin: 0%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  body main .grid-item-text-1 {
+    grid-column: 1/5;
+    grid-row: 2;
+  }
+  body main .grid-item-text2 {
+    grid-column: 1/5;
+    grid-row: 4;
+  }
+  body main .grid-item1 {
+    grid-column: 1/4;
+    grid-row: 1;
+    width: 90%;
+  }
+  body main .grid-item2 {
+    grid-column: 1/5;
+    grid-row: 3;
+    width: 90%;
+  }
+  body main .sec-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .div-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  body main .texto {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body main .sec-servicios div .img-servicios {
+  width: 100%;
+  box-shadow: 10px 10px 5px 0px rgb(143, 139, 143);
+}
+
+header #logo {
+  width: 150px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  margin-left: 0;
+}
+header #logo .logo {
+  opacity: 1;
+}
+
+.div-central {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.img-index {
+  width: 100%;
+  opacity: 0.8;
+  box-shadow: 10px 10px 5px 0px rgb(143, 139, 143);
+}
+
+.texto {
+  display: block;
+  position: absolute;
+  bottom: 1%;
+  left: 3%;
+  font-family: "Oswald", sans-serif;
+  color: antiquewhite;
+  margin: 1em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer img {
+  padding: 1rem;
+  margin: 1rem;
+  width: 4em;
+}
+
+.img-flota {
+  padding: 0%;
+  margin: 1em;
+  width: 90%;
+  box-shadow: 10px 10px 5px 0px rgb(143, 139, 143);
+  }
+
+/*servicios*/
+.sec-servicios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.sec-servicios div .img-servicios {
+  width: 40rem;
+  opacity: 0.8;
+}
+.sec-servicios .div-servicios {
+  padding: 2em;
+}
+.sec-servicios .div-servicios h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  margin: 1em;
+}
+.sec-servicios .div-servicios p {
+  font-family: "Oswald", sans-serif;
+  color: antiquewhite;
+  margin: 1em;
+}
+
+/*Nosotros*/
+.sec-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec-nosotros .titulos {
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  margin: 1em;
+}
+.sec-nosotros p {
+  font-family: "Oswald", sans-serif;
+  color: antiquewhite;
+  margin: 1em;
+}
+.sec-nosotros div {
+  width: 100%;
+  margin: 2em;
+  padding: 1em;
+}
+
+/*Contacto*/
+.div-contacto .titulos {
+  color: antiquewhite;
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  color: antiquewhite;
+  margin: 1em;
+}
+
+/*Efecto*/
+header:hover #logo {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+header {
+  overflow: hidden;
+}
+
+.img-index:hover {
+  filter: saturate(180%);
+}
+
+/*# sourceMappingURL=style.css.map */
